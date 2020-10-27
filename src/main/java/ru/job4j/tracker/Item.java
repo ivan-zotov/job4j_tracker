@@ -5,15 +5,9 @@ import java.time.LocalDateTime;
 public class Item {
     private int id;
     private String name;
-    private LocalDateTime created;
 
     public LocalDateTime getCreated() {
-        created = LocalDateTime.now();
-        return created;
-    }
-
-    public void setCreated(LocalDateTime created) {
-        this.created = LocalDateTime.now();
+        return LocalDateTime.now();
     }
 
     public int getId() {
@@ -31,6 +25,5 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
-
 
 }
